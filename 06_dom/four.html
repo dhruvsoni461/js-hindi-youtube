@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>languages</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Some languages</h1>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // additon of some languages using DOM 
+    function addLang(someLanguages) {
+        const li = document.createElement('li');  //select the whole li element and create it
+        li.innerHTML = `${someLanguages}`         //changes the inner html i.e javascript
+        document.querySelector('.language').appendChild(li)   //apend the child of the parent class .language
+    }
+    addLang("python")
+    addLang("java")
+    addLang("typescript")
+
+
+
+    // edit new language in the place of the old one 
+    const li = document.querySelector("li:nth-child(2)");
+    const creation = document.createElement('li')
+    creation.textContent = "ruby"
+    li.replaceWith(creation)
+
+
+    //another method of editing of any language 
+    const neww = document.querySelector("li:nth-child(1)")
+    neww.outerHTML = '<li>python</li>'
+
+
+    //removing element from the list
+    const lastChild = document.querySelector("li:last-child")
+    lastChild.remove ()
+
+</script>
+</html>
