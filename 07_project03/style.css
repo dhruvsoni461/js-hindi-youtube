@@ -1,0 +1,25 @@
+.center{
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(153, 181, 249);
+    height: 200px;
+    box-shadow: 0px 4px 10px;
+}
+span{
+    color:rgb(26, 51, 101);
+    align-items: center;
+    width: 200px;
+    margin: 95px;
+}
+.clock{
+    align-items: center;
+    width: 100px;
+    margin: 95px;
+    margin-top: 55px;
+}
+body{
+    background-color: rgb(26, 51, 101);
+}
