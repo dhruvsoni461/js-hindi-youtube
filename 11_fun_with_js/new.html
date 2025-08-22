@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="green">green</button>
+    <button id="orange">orange</button>
+</body>
+<script>
+    document.getElementById("green").onclick = function () {
+        document.body.style.backgroundColor = "orange"
+    }
+    document.getElementById("orange").onclick = function () {
+        document.body.style.backgroundColor = "green"
+    }
+</script>
+</html>
